@@ -3,6 +3,12 @@
 #include <iostream>
 #include "m_matrix.h"
 using namespace std;
+
+/*
+	The par_matrix.h as well as par_matrix.cpp are about how to construct and solve the quadratic equations by guessing some parameters
+
+*/
+
 int dimTrans(int bg, int ed, int tot);
 
 class ParMat {

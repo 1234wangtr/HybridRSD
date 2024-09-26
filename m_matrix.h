@@ -13,6 +13,11 @@
 
 using namespace std;
 
+/*
+	The m_matrix.h as well as the m_matrix.cpp are about matrix, vector and Gaussian elimination
+*/
+
+
 class Matrix {
 public:
 	int width;
@@ -207,11 +212,10 @@ Vec vecAdd(const Vec& v1, const Vec& v2);
 
 int vecDot(const Vec& v1, const Vec& v2);
 
-// 需要传入一个向量 以记录打乱次序
 Matrix randomGauss(Matrix mo, int l, vector<int>& v);
 Matrix randomGauss_my(Matrix mo, int l, vector<int>& v);
 
-Matrix figureEqus(Matrix,Vec&); // Vec& 记录解方程右边的东西
+Matrix figureEqus(Matrix,Vec&); 
 Matrix justGauss(Matrix);
 Matrix justGauss2(Matrix);
 Matrix justGaussDbg(Matrix,int);
@@ -225,7 +229,6 @@ Vec matrixMult(const Matrix & m, const Vec& v);
 
 Matrix matMulMat(const Matrix & m, const Matrix & mm);
 
-//变量声明
 extern string tmpAns;
 extern time_t bg, ed;
 
@@ -233,7 +236,6 @@ extern const int n;
 extern const int k;
 extern const int r;
 
-// 尝试浪费空间的
 extern char** matrix;
 
 extern Matrix HWhole;
